@@ -82,7 +82,7 @@ nav a:hover {
 }
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/school - logo.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("school (2).jpg") no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 150px 20px;
@@ -602,5 +602,6 @@ footer iframe {
     transform: none;
   }
 }
+
 
 
