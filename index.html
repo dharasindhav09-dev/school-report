@@ -81,21 +81,6 @@
       overflow: hidden;
     }
 
-    .enter-btn::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-      transition: left 0.5s;
-    }
-
-    .enter-btn:hover::before {
-      left: 100%;
-    }
-
     .enter-btn:hover {
       background: linear-gradient(45deg, #ee5a24, #ff6b6b);
       transform: translateY(-3px);
@@ -177,47 +162,6 @@
       }
     }
 
-    /* Floating particles background */
-    .particles {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: -1;
-    }
-
-    .particle {
-      position: absolute;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      animation: float 6s ease-in-out infinite;
-    }
-
-    .particle:nth-child(1) { width: 20px; height: 20px; left: 10%; animation-delay: 0s; }
-    .particle:nth-child(2) { width: 15px; height: 15px; left: 20%; animation-delay: 1s; }
-    .particle:nth-child(3) { width: 25px; height: 25px; left: 30%; animation-delay: 2s; }
-    .particle:nth-child(4) { width: 18px; height: 18px; left: 40%; animation-delay: 3s; }
-    .particle:nth-child(5) { width: 22px; height: 22px; left: 50%; animation-delay: 4s; }
-    .particle:nth-child(6) { width: 16px; height: 16px; left: 60%; animation-delay: 5s; }
-    .particle:nth-child(7) { width: 20px; height: 20px; left: 70%; animation-delay: 2s; }
-    .particle:nth-child(8) { width: 24px; height: 24px; left: 80%; animation-delay: 1s; }
-    .particle:nth-child(9) { width: 19px; height: 19px; left: 90%; animation-delay: 3s; }
-
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(100vh) rotate(0deg);
-        opacity: 0;
-      }
-      10%, 90% {
-        opacity: 1;
-      }
-      50% {
-        transform: translateY(-10vh) rotate(180deg);
-      }
-    }
-
     /* Responsive design */
     @media (max-width: 768px) {
       .welcome-container {
@@ -255,19 +199,6 @@
   </style>
 </head>
 <body class="index-page">
-  <!-- Floating particles background -->
-  <div class="particles">
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-  </div>
-
   <div class="welcome-container">
     <img src="Logo.jpg" alt="Sheth M J High School Logo" class="school-logo">
     
@@ -307,68 +238,6 @@
     </div>
   </div>
 
-  <script>
-    // Add some interactive effects
-    document.addEventListener('DOMContentLoaded', function() {
-      // Add hover effect to info items
-      const infoItems = document.querySelectorAll('.info-item');
-      infoItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-          this.style.background = 'linear-gradient(135deg, #1e3c72, #2a5298)';
-          this.style.color = 'white';
-        });
-        
-        item.addEventListener('mouseleave', function() {
-          this.style.background = 'linear-gradient(135deg, #f8f9fa, #e9ecef)';
-          this.style.color = '';
-        });
-      });
-
-      // Add click animation to enter button
-      const enterBtn = document.querySelector('.enter-btn');
-      enterBtn.addEventListener('click', function(e) {
-        // Create ripple effect
-        const ripple = document.createElement('span');
-        const rect = this.getBoundingClientRect();
-        const size = Math.max(rect.height, rect.width);
-        const x = e.clientX - rect.left - size / 2;
-        const y = e.clientY - rect.top - size / 2;
-        
-        ripple.style.cssText = `
-          position: absolute;
-          border-radius: 50%;
-          background: rgba(255,255,255,0.6);
-          transform: scale(0);
-          animation: ripple 0.6s linear;
-          left: ${x}px;
-          top: ${y}px;
-          width: ${size}px;
-          height: ${size}px;
-        `;
-        
-        this.appendChild(ripple);
-        
-        setTimeout(() => {
-          ripple.remove();
-        }, 600);
-      });
-
-      // Add CSS for ripple animation
-      const style = document.createElement('style');
-      style.textContent = `
-        @keyframes ripple {
-          to {
-            transform: scale(4);
-            opacity: 0;
-          }
-        }
-      `;
-      document.head.appendChild(style);
-    });
-  </script>
+  <script src="sc.js"></script>
 </body>
 </html>
-
-
-
-
