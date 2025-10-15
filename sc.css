@@ -182,6 +182,12 @@ nav a:hover {
   border-radius: 2px;
 }
 
+.container h3 {
+  color: #1e3c72;
+  font-size: 1.5em;
+  margin: 25px 0 15px 0;
+}
+
 .container p {
   font-size: 1.1em;
   margin-bottom: 25px;
@@ -261,7 +267,7 @@ form {
   margin-top: 30px;
 }
 
-form input, form textarea {
+form input, form textarea, form select {
   width: 100%;
   padding: 15px;
   margin: 10px 0;
@@ -272,7 +278,7 @@ form input, form textarea {
   background: white;
 }
 
-form input:focus, form textarea:focus {
+form input:focus, form textarea:focus, form select:focus {
   outline: none;
   border-color: #1e3c72;
   box-shadow: 0 0 15px rgba(30,60,114,0.2);
@@ -462,7 +468,7 @@ footer iframe {
     padding: 20px;
   }
   
-  form input, form textarea {
+  form input, form textarea, form select {
     padding: 12px;
     font-size: 16px; /* Prevents zoom on iOS */
   }
@@ -544,7 +550,7 @@ footer iframe {
     padding: 15px;
   }
   
-  form input, form textarea {
+  form input, form textarea, form select {
     padding: 10px;
   }
   
@@ -602,6 +608,3 @@ footer iframe {
     transform: none;
   }
 }
-
-
-
