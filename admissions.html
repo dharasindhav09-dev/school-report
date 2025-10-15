@@ -23,20 +23,105 @@
   </header>
 
   <div class="container">
-    <h2>Admissions</h2>
-    <p>Admission forms are available at the school office or can be downloaded online. Admission is based on merit and availability of seats.</p>
+    <h2>Admissions Information</h2>
+    <p>Welcome to Sheth M J High School admissions! We are committed to providing quality education and welcome applications from students who are eager to learn and grow in our nurturing academic environment.</p>
 
-    <h3>Requirements</h3>
+    <h2>Admission Process</h2>
+    <p>Admission forms are available at the school office during working hours or can be downloaded from our website. Admission is based on merit, availability of seats, and adherence to state government guidelines.</p>
+
+    <h3>Grades Available for Admission</h3>
     <ul>
-      <li>Completed application form</li>
-      <li>Birth certificate</li>
-      <li>Previous school records</li>
-      <li>Passport-size photographs</li>
+      <li>Grade 9 (Standard 9)</li>
+      <li>Grade 10 (Standard 10)</li>
+      <li>Grade 11 (Standard 11) - Science, Commerce, Arts streams</li>
+      <li>Grade 12 (Standard 12) - Science, Commerce, Arts streams</li>
+    </ul>
+
+    <h3>Admission Requirements</h3>
+    <ul>
+      <li>Completed admission application form</li>
+      <li>Original birth certificate and photocopy</li>
+      <li>Previous school leaving certificate (TC)</li>
+      <li>Mark sheets of previous qualifying examination</li>
+      <li>Caste certificate (if applicable)</li>
+      <li>Income certificate (for fee concession, if applicable)</li>
+      <li>Passport-size photographs (4 copies)</li>
+      <li>Aadhar card copy of student and parents</li>
+      <li>Medical fitness certificate</li>
     </ul>
 
     <h3>Important Dates</h3>
-    <p>Admission opens: March 1st<br>
-    Last date to apply: April 30th</p>
+    <p><strong>Admission Process Timeline:</strong></p>
+    <ul>
+      <li>Admission forms available: March 1st</li>
+      <li>Last date to submit application: April 30th</li>
+      <li>Merit list publication: May 15th</li>
+      <li>Document verification: May 20th - May 25th</li>
+      <li>Fee payment deadline: May 30th</li>
+      <li>Academic session begins: First week of June</li>
+    </ul>
+
+    <h3>Fee Structure</h3>
+    <p>As a private aided school, we maintain affordable fee structure:</p>
+    <ul>
+      <li>Admission Fee: ₹500 (one-time)</li>
+      <li>Annual Tuition Fee: ₹2,400 (payable in installments)</li>
+      <li>Development Fee: ₹300 (annual)</li>
+      <li>Library Fee: ₹100 (annual)</li>
+      <li>Sports Fee: ₹200 (annual)</li>
+      <li>Examination Fee: ₹150 (annual)</li>
+    </ul>
+    <p><em>Note: Fee structure is subject to change as per government guidelines. Concessions available for economically weaker sections.</em></p>
+
+    <h3>Admission Form</h3>
+    <form id="admitForm">
+      <label for="admit-name">Student's Full Name:</label>
+      <input type="text" id="admit-name" name="name" required>
+
+      <label for="admit-dob">Date of Birth:</label>
+      <input type="date" id="admit-dob" name="dob" required>
+
+      <label for="admit-grade">Grade Applying For:</label>
+      <select id="admit-grade" name="grade" required>
+        <option value="">Select Grade</option>
+        <option value="9">Grade 9</option>
+        <option value="10">Grade 10</option>
+        <option value="11-science">Grade 11 - Science</option>
+        <option value="11-commerce">Grade 11 - Commerce</option>
+        <option value="11-arts">Grade 11 - Arts</option>
+        <option value="12-science">Grade 12 - Science</option>
+        <option value="12-commerce">Grade 12 - Commerce</option>
+        <option value="12-arts">Grade 12 - Arts</option>
+      </select>
+
+      <label for="admit-parent">Parent/Guardian Name:</label>
+      <input type="text" id="admit-parent" name="parent" required>
+
+      <label for="admit-phone">Contact Number:</label>
+      <input type="tel" id="admit-phone" name="phone" required>
+
+      <label for="admit-address">Address:</label>
+      <textarea id="admit-address" name="address" rows="3" required></textarea>
+
+      <label for="admit-previous">Previous School:</label>
+      <input type="text" id="admit-previous" name="previous-school">
+
+      <button type="submit">Submit Application</button>
+    </form>
+
+    <h3>Contact for Admissions</h3>
+    <p><strong>Admission Office Hours:</strong> Monday to Saturday, 10:00 AM to 4:00 PM</p>
+    <p><strong>Phone:</strong> +91-1234567890</p>
+    <p><strong>Email:</strong> admissions@shethmjhighschool.com</p>
+    
+    <h3>Selection Criteria</h3>
+    <ul>
+      <li>Academic performance in previous class</li>
+      <li>Availability of seats in desired grade/stream</li>
+      <li>Compliance with state government admission guidelines</li>
+      <li>Priority given to local residents of Viramgam</li>
+      <li>Reserved category provisions as per government norms</li>
+    </ul>
   </div>
 
   <footer>
@@ -46,8 +131,3 @@
   <script src="sc.js"></script>
 </body>
 </html>
-
-
-
-
-
