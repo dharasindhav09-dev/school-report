@@ -24,23 +24,67 @@
 
   <div class="container">
     <h2>Contact Us</h2>
-    <p><b>Address:</b> Sheth M J High School, Viramgam, Gujarat, India</p>
-    <p><b>Phone:</b> +91-1234567890</p>
-    <p><b>Email:</b> info@shethmjhighschool.com</p>
+    <p>We welcome your inquiries and feedback. Please feel free to reach out to us through any of the following methods. Our staff is always ready to assist you with information about admissions, academics, or any other school-related matters.</p>
 
-    <h3>Send us a message</h3>
+    <div class="school-address">
+      <h3>School Address</h3>
+      <p><strong>Sheth M J High School</strong><br>
+      Viramgam, Ahmedabad District<br>
+      Gujarat - 382150<br>
+      India</p>
+    </div>
+
+    <h3>Contact Information</h3>
+    <p><strong>Phone:</strong> +91-1234567890</p>
+    <p><strong>Email:</strong> info@shethmjhighschool.com</p>
+    <p><strong>Admissions Email:</strong> admissions@shethmjhighschool.com</p>
+    <p><strong>Principal's Office:</strong> principal@shethmjhighschool.com</p>
+
+    <h3>Office Hours</h3>
+    <ul>
+      <li><strong>Monday to Friday:</strong> 9:00 AM - 4:00 PM</li>
+      <li><strong>Saturday:</strong> 9:00 AM - 1:00 PM</li>
+      <li><strong>Sunday:</strong> Closed</li>
+      <li><strong>Public Holidays:</strong> Closed</li>
+    </ul>
+
+    <h3>Department-wise Contact</h3>
+    <ul>
+      <li><strong>Principal's Office:</strong> Extension 101</li>
+      <li><strong>Accounts Department:</strong> Extension 104</li>
+      <li><strong>Library:</strong> Extension 105</li>
+    </ul>
+
+    <h3>Send us a Message</h3>
     <form>
-      <label>Name:</label><br>
-      <input type="text" name="name"><br><br>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
 
-      <label>Email:</label><br>
-      <input type="email" name="email"><br><br>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
 
-      <label>Message:</label><br>
-      <textarea rows="4" name="message"></textarea><br><br>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone">
 
-      <button type="submit">Submit</button>
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject" required>
+        <option value="">Select Subject</option>
+        <option value="admissions">Admissions Inquiry</option>
+        <option value="academics">Academic Information</option>
+        <option value="facilities">School Facilities</option>
+        <option value="feedback">Feedback/Suggestions</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Please describe your inquiry or message..."></textarea>
+
+      <button type="submit">Send Message</button>
     </form>
+
+    <h3>Directions to School</h3>
+    <p>Sheth M J High School is conveniently located in Viramgam with easy access by all-weather roads. The school is well-connected by public transportation and is easily accessible from various parts of Ahmedabad district.</p>
+    
   </div>
 
   <footer>
@@ -61,8 +105,3 @@
   <script src="sc.js"></script>
 </body>
 </html>
-
-
-
-
-
